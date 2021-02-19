@@ -188,21 +188,21 @@ custom_views.keypress_rotation_practice = function(config) {
                     let correctness;
                     const RT = Date.now() - startingTime; // measure RT before anything else
 
-                    // if (
-                    //     config.data[CT].expected ===
-                    //         config[keyPressed]
-                    // ) {
-                    //     correctness = "correct";
-                    //     // show feedback (for practice trial only)
-                    //     $(".magpie-view-stimulus").addClass("magpie-invisible");
-                    //     $('#feedback').text('Correct!');
+                    if (
+                        config.data[CT].expected ===
+                            config[keyPressed]
+                    ) {
+                        correctness = "correct";
+                        // show feedback (for practice trial only)
+                        // $(".magpie-view-stimulus").addClass("magpie-invisible");
+                        // $('#feedback').text('Correct!');
 
-                    // } else {
-                    //     correctness = "incorrect";
-                    //     // show feedback (for practice trial only)
-                    //     $(".magpie-view-stimulus").addClass("magpie-invisible");
-                    //     $('#feedback').text('Incorrect!');
-                    // }
+                    } else {
+                        correctness = "incorrect";
+                        // show feedback (for practice trial only)
+                        // $(".magpie-view-stimulus").addClass("magpie-invisible");
+                        // $('#feedback').text('Incorrect!');
+                    }
 
                     const shuffled = _.shuffle(updated_letters);
 
@@ -286,5 +286,6 @@ custom_views.keypress_rotation_practice = function(config) {
 
     return keypress_rotation_practice_function;
 };
+
 
 
