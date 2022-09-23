@@ -51,13 +51,13 @@ $("document").ready(function() {
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "2",
-            serverAppURL: "https://sereslstudies.herokuapp.com/api/submit_experiment/",
+            experimentID: "01",
+            serverAppURL: "https://seresl-studies.herokuapp.com/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
             deployMethod: "directLink",
-            contact_email: "niloofar@huskers.unl.edu",
+            contact_email: "kangil.park@huskers.unl.edu",
             prolificURL: ""
         },
         // Here, you can specify how the progress bar should look like
