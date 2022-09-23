@@ -51,8 +51,8 @@ $("document").ready(function() {
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "1",
-            serverAppURL: "https://seresl-studies.herokuapp.com/api/submit_experiment/",
+            experimentID: "2",
+            serverAppURL: "https://sereslstudies.herokuapp.com/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
